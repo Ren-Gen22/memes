@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Homepage</title>
+    <style>
+        /* Center align page contents */
+        html { 
+  background: url(img/point.jpg) no-repeat center center fixed; 
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+      font-family: Arial, sans-serif;
+    
+}
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* CSS for animated title */
+        .title {
+            font-family: "Brush Script MT", cursive;
+            font-size: 48px;
+            animation: bounce 5s infinite;
+        }
+
+        /* CSS for fancy button */
+        .button {
+            display: inline-block;
+            margin-top: 20px; /* Add margin to separate from title */
+            padding: 15px 30px;
+            font-size: 24px;
+            background-color: #ff5722;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        /* CSS for hover effect on button */
+        .button:hover {
+            background-color: #f44336;
+        }
+
+        /* Animation for title */
+        @keyframes bounce {
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Welcome to The World of MEMES</h1><br><br>
+    <a href="./login" class="button">Login</a>
+</body>
+</html>
